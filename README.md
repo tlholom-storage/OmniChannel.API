@@ -1,55 +1,40 @@
-# .NET Core Web API
+# Omni Channel Client Hub API
 
-This project is a **.NET 10 Web API** that provides backend services for managing application data and broadcasting system activity. It exposes RESTful endpoints for CRUD operations and uses **SignalR** to stream system logs to connected clients in real time.
-
----
-
-## Features
-
-- **.NET 10 Web API**
-- **Entity Framework Core**
-  - Code-first approach
-  - CRUD operations via REST endpoints
-- **SignalR**
-  - Real-time broadcasting of system logs
-  - Supports multiple connected clients
-- **Clean, layered architecture**
-- **Extensible and easy to maintain**
+A .NET Core Web API built on **.NET 10** that provides backend services for client management, analytics, and system monitoring. The API exposes RESTful endpoints for CRUD operations and uses real-time communication to broadcast system events.
 
 ---
 
 ## Technology Stack
 
-- .NET 10
-- ASP.NET Core Web API
-- Entity Framework Core
-- SignalR
-- SQL Server (or configurable relational database)
+- **.NET 10**
+- **ASP.NET Core Web API**
+- **Entity Framework Core**
+- **SignalR**
+- **Swagger / OpenAPI**
 
 ---
 
-## API Overview
+## Key Features
 
-The API exposes endpoints for managing domain entities using standard HTTP verbs:
+### Client Management (CRUD)
+- Create, read, update, and delete client records
+- Entity Framework Core is used for data access and persistence
+- Clean separation of concerns using controllers and services
 
-- `GET` – Retrieve records
-- `POST` – Create new records
-- `PUT` – Update existing records
-- `DELETE` – Remove records
+### Real-Time System Logs
+- **SignalR** is used to broadcast system and application logs
+- Connected clients receive live updates without polling
+- Useful for monitoring background processes and system activity
 
-All database operations are handled using **Entity Framework Core**.
+### API Documentation
+- **Swagger** is enabled for interactive API exploration and testing
+- Automatically generated OpenAPI specification
 
----
+Access Swagger UI here:
 
-## Real-Time Logging with SignalR
+🔗 **Swagger UI**  
+https://net-core-omni-channel-client-hub.azurewebsites.net/index.html
 
-The API includes a SignalR hub responsible for broadcasting system logs such as:
-
-- CRUD operations
-- Background processing events
-- Application-level notifications
-
-Connected clients receive log messages instantly without polling.
 
 ---
 
