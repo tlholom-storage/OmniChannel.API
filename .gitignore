@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/OmniChannel.API/appsettings.json
+/OmniChannel.API/appsettings.Development.json
+/OmniChannel.API/appsettings.Production.json

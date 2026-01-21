@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="OmniChannel.API.Tests/OmniChannel.API.Tests.csproj" Id="510cde20-bb59-4503-8a40-7e2297a2eea1" />
+  <Project Path="OmniChannel.API/OmniChannel.API.csproj" />
+</Solution>

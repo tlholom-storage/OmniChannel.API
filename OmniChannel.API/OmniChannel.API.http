@@ -1,0 +1,6 @@
+@OmniChannel.API_HostAddress = http://localhost:7178
+
+GET {{OmniChannel.API_HostAddress}}/api/Client/
+Accept: application/json
+
+###
